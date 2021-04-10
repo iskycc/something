@@ -1,0 +1,34 @@
+!
+! White list. Fixing filtration errors (false-positive)
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/77888
+theage.com.au,smh.com.au#@#div[id^="_"] > iframe[scrolling="no"][src^="http"][width][height][frameborder="0"]
+! https://github.com/AdguardTeam/AdguardFilters/issues/62998
+||popin.cc^$third-party,badfilter
+! https://github.com/AdguardTeam/AdguardFilters/issues/74682
+!+ PLATFORM(ios, ext_safari)
+@@||jsr9.com^$domain=jsr9.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/71747
+mcc.xunliandata.com#@#.ad_wrap
+@@||mcc.xunliandata.com/mci-reward/static/img/ad.
+! https://github.com/AdguardTeam/AdguardFilters/issues/71435
+@@||ahd.ruten.com.tw/ahd/fetch_ad.php?zone=*%2C$domain=ruten.com.tw
+! https://github.com/AdguardTeam/AdguardFilters/issues/70649
+@@||rm.sina.com.cn/minisite/*/css/art_normal.css$domain=client.sina.cn
+! https://github.com/AdguardTeam/AdguardFilters/issues/68805
+@@||technews.tw^$generichide,badfilter
+@@||technews.tw/www/delivery/$badfilter
+! https://github.com/AdguardTeam/AdguardFilters/issues/67876
+new.qq.com#@##TopAd
+! https://github.com/AdguardTeam/AdguardFilters/issues/68017
+@@||dayanzai.me/image/ad/$image
+! https://github.com/AdguardTeam/AdguardFilters/issues/66685
+bmvc2020-conference.com#@#div[id][style="width: 100%;"] > iframe[scrolling="no"][src^="http"][src*="?"][src*="="][src*="&"][width][height][frameborder="0"]
+! https://github.com/AdguardTeam/AdguardFilters/issues/66625
+@@||securepubads.g.doubleclick.net/gpt/pubads_impl_*.js$domain=gamer.com.tw
+||googletagservices.com/tag/js/gpt.js$script,redirect=googletagservices-gpt,domain=gamer.com.tw,important
+! https://github.com/AdguardTeam/AdguardFilters/issues/66447
+@@||wkstatic.bdimg.com/static/wkcore/widget/commerce/fengchao/*$domain=wenku.baidu.com
+! https://github.com/AdguardTeam/AdguardFilters/issues/57243
+nfmovies.com#@?#div[id]:-abp-has(>img[onclick="openurl()"])
+@@||nfmovies.com/static/side.jpg$xmlhttprequest,domain=nfmovies.com
